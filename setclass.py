@@ -29,10 +29,10 @@ class player:
 
     def move(self, n):
         k = self.position + n
+        self.position = k
         if abs(k) > 1:
             self.state = True
         else:
-            self.position = k
             self.state = False
 
     def clean(self):
